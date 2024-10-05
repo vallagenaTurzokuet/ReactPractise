@@ -1,0 +1,7 @@
+.Cards 
+{
+    display: flex;
+    padding: 5em;
+    background-color: rgb(141, 22, 22);
+    border-radius: 2em;
+}
