@@ -1,12 +1,17 @@
 import './header.css';
+
+const myheader = ['Home','About','Friends','Notifications']
 const Header = () =>{
     return(
-        <li className='header'>
-            <ul>Home</ul>
-            <ul>About</ul>
-            <ul>Friends</ul>
-            <ul>Notifications</ul>
-        </li>
+        <ul className='header'>
+            {
+                myheader.map((item)=>{
+                    return(
+                        <li>{item}</li>
+                    )
+                })
+            }
+        </ul>
     )
 }
 export default Header

@@ -1,8 +1,8 @@
 import './Cards.css';
-const Cards = () =>{
+const Cards = (props) =>{
     return(
-        <div className='Cards'>
-            <p>This is a Card</p>
+        <div className='Cards' onClick={props.fun} >
+            <p > {props.name} </p>
         </div>
     )
 }
